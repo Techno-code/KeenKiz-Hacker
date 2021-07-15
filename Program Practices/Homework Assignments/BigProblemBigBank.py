@@ -52,6 +52,12 @@ class Premium():
         interest = self.balance*(1 + self.interest_rate * years) - fee
         return interest
 
+    def pay_annual_fee(self):
+        if self.balance > 1000:
+            self.balance -= 1000
+        else:
+            print("pay up peasent u broke IRS gonna get u")
+
 class ULTRA_ELITE():
     def __init__(self):
         self.balance = 300 # Initial Deposit
@@ -70,4 +76,9 @@ class ULTRA_ELITE():
         interest = self.balance*(1 + self.interest_rate * years) - fee
         return interest
 
+    def pay_annual_fee(self):
+        if self.balance > 10000:
+            self.balance -= 1000
+        else:
+            print("pay up peasent u broke IRS gonna get u")
 
